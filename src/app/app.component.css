@@ -1,0 +1,21 @@
+.page{
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: 100px auto 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas:"header"
+                      "body"
+                      "footer";
+}
+.header{
+  grid-area: header;
+}
+.body{
+  grid-area: body;
+  align-self: center;
+  padding: 2rem 0;
+}
+.footer{
+  grid-area: footer;
+  padding-bottom: 2rem;
+}
